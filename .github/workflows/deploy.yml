@@ -1,8 +1,8 @@
 name: Deploy site
 
 on:
-  push:
-    branches: [published]
+  release:
+    branches: [main]
 
 concurrency:
   group: deploy-production
