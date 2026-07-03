@@ -2,7 +2,7 @@ name: Deploy site
 
 on:
   release:
-    branches: [main]
+    types: [published]
 
 concurrency:
   group: deploy-production
