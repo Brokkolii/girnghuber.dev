@@ -40,12 +40,33 @@
     <body>
         <p><a href="/">← back</a></p>
         <h1>Privacy Policy</h1>
-        <p class="meta">Last updated: 04.06.2026</p>
+        <p class="meta">Last updated: 04.07.2026</p>
 
         <p>
             This site (<code>girnghuber.dev</code>) and the services hosted
             under it are operated privately by Patrick Girnghuber. This page
             describes what data is processed when you interact with them.
+        </p>
+
+        <h2>Hosting and infrastructure</h2>
+        <p>
+            The static website is hosted on a virtual server provided by Hetzner
+            Online GmbH (Industriestr. 25, 91710 Gunzenhausen, Germany), located
+            in a data center in Helsinki, Finland, within the European Economic
+            Area (EEA).
+        </p>
+        <p>
+            The Matrix homeserver and the web-based chat clients run on
+            self-hosted hardware operated privately by Patrick Girnghuber. They
+            are made reachable from the internet through the Hetzner server,
+            which acts only as an <strong>encrypted relay</strong>: traffic is
+            forwarded to the home server over an encrypted tunnel and is
+            <strong>not decrypted, inspected, or stored in content form</strong>
+            by the relay. TLS is terminated on the home server, which means the
+            hosting provider cannot read the content of your connections to the
+            Matrix homeserver or the chat clients. The relay may process
+            connection metadata (such as IP addresses and timing) at the network
+            level solely in order to forward traffic.
         </p>
 
         <h2>Static website (girnghuber.dev)</h2>
@@ -61,7 +82,8 @@
         <h2>Matrix homeserver (matrix.girnghuber.dev)</h2>
         <p>
             The Matrix homeserver runs
-            <a href="https://element-hq.github.io/synapse/">Synapse</a>. When
+            <a href="https://element-hq.github.io/synapse/">Synapse</a> on
+            self-hosted hardware (see “Hosting and infrastructure” above). When
             you have an account here or communicate with users on this server,
             the following is processed:
         </p>
@@ -125,26 +147,32 @@
             window may persist after deletion from the live system.
         </p>
 
-        <h2>Content delivery and DDoS protection (Cloudflare)</h2>
+        <h2>Domain name resolution (Cloudflare)</h2>
         <p>
-            This site uses Cloudflare, Inc. (101 Townsend Street, San Francisco,
-            CA 94107, USA) as a reverse proxy and content delivery network. All
-            traffic to this site is routed through Cloudflare's network, which
-            means Cloudflare receives and processes connection metadata
-            including your IP address, the requested URL, your browser's user
-            agent, and timing information. Cloudflare uses this data to deliver
-            content, mitigate attacks, and provide security services. Cloudflare
-            may retain connection logs for a short period (typically up to
-            several days) for these purposes.
-        </p>
-        <p>
-            Data may be processed on servers located outside the European
-            Economic Area, including in the United States. Cloudflare relies on
-            the EU-U.S. Data Privacy Framework and Standard Contractual Clauses
-            as transfer mechanisms. More information:
+            Authoritative DNS for <code>girnghuber.dev</code> and its subdomains
+            is provided by Cloudflare, Inc. (101 Townsend Street, San Francisco,
+            CA 94107, USA), acting solely as a DNS provider. Cloudflare is
+            configured in <strong>DNS-only mode</strong>: traffic to this site
+            and its services is <strong>not</strong> proxied through
+            Cloudflare's network, and Cloudflare does not terminate TLS,
+            inspect, cache, or route your connections. Cloudflare processes only
+            the DNS queries necessary to resolve the domain. Such queries may be
+            handled on servers outside the EEA, including in the United States.
+            More information:
             <a href="https://www.cloudflare.com/privacypolicy/"
                 >https://www.cloudflare.com/privacypolicy/</a
             >.
+        </p>
+
+        <h2>International data transfers</h2>
+        <p>
+            The website, the relay, and the homeserver are all hosted within the
+            European Economic Area (Finland and Germany). Some third parties may
+            nonetheless process data outside the EEA — in particular Cloudflare
+            (DNS resolution), any identity server you opt into, and any
+            federated homeservers you communicate with. Where such transfers
+            occur, they rely on appropriate safeguards such as the EU-U.S. Data
+            Privacy Framework and Standard Contractual Clauses, as applicable.
         </p>
 
         <h2>Your rights</h2>
