@@ -1,4 +1,0 @@
-Contact: mailto:security@girnghuber.dev
-Expires: 2027-06-22T00:00:00.000Z
-Preferred-Languages: en, de
-Canonical: https://girnghuber.dev/.well-known/security.txt
