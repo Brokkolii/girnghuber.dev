@@ -1,0 +1,26 @@
+:root {
+    --bg: #0a0a14;
+    --fg: #e8e8f0;
+    --muted: #8a8aa0;
+    --accent: #7c5cff;
+    --accent2: #ff5cc8;
+    --card: rgba(255, 255, 255, 0.04);
+    --border: rgba(255, 255, 255, 0.08);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    overflow-x: hidden;
+    line-height: 1.6;
+}

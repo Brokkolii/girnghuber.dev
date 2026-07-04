@@ -1,0 +1,25 @@
+---
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+
+const { pageTitle } = Astro.props;
+const siteName = "girnghuber.dev";
+const title = pageTitle ? `${siteName} - ${pageTitle}` : siteName;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{title}</title>
+        <meta
+            name="description"
+            content="Personal homeserver and chat hub of girnghuber.dev."
+        />
+    </head>
+    <body>
+        <slot />
+    </body>
+    <Footer />
+</html>

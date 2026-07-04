@@ -1,0 +1,42 @@
+---
+const year: number = new Date().getFullYear();
+---
+
+<style>
+    footer {
+        border-top: 1px solid var(--border);
+        padding: 3rem 2rem 2rem;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.9rem;
+    }
+    footer a {
+        color: var(--fg);
+        text-decoration: none;
+        margin: 0 0.6rem;
+    }
+    footer a:hover {
+        color: var(--accent);
+    }
+    footer .legal {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+    footer .copy {
+        margin-top: 1rem;
+        font-size: 0.75rem;
+        opacity: 0.6;
+    }
+</style>
+
+<footer>
+    <div>
+        <a href="mailto:hello@girnghuber.dev">hello@girnghuber.dev</a>
+    </div>
+    <div class="legal">
+        <a href="/privacy.html">Privacy</a> ·
+        <a href="/imprint.html">Imprint</a> .
+        <a href="/.well-known/security.txt">Security</a>
+    </div>
+    <div class="copy">© {year} girnghuber.dev</div>
+</footer>
